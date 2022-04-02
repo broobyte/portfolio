@@ -15,7 +15,7 @@ const email = document.getElementById("email");
 -----------*/
 
 const projectText = [
-  "A personal blog made with Nodejs and MongoDB.<br /> <a href='/'>Go to <i class='fa-solid fa-arrow-up-right-from-square'></i></a>",
+  "A personal blog made with Nodejs and MongoDB.<br /> <a href='http://www.brooblog.co.uk'>Go to <i class='fa-solid fa-arrow-up-right-from-square'></i></a>",
   "A random colour switcher where you can find both the name and hex values.<br /> <a href='/colours'>Go to <i class='fa-solid fa-arrow-up-right-from-square'></i></a>",
   "A bot who scrapes news articles for the most common word of the day.<br /> <a href='https://www.reddit.com/r/commonword' target='_blank'>Reddit <i class='fa-solid fa-arrow-up-right-from-square'></i></a> | <a href='https://www.twitter.com/commonwordbot' target='_blank'>Twitter <i class='fa-solid fa-arrow-up-right-from-square'></i></a>",
 ];

@@ -1,0 +1,117 @@
+/*--------
+    GLOBAL
+----------*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+:root {
+  --BGdark: rgb(31, 31, 31);
+  --BGlight: white;
+  --Textdark: white;
+  --Textlight: rgb(31, 31, 31);
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--BGdark);
+  color: var(--Textdark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+main {
+  height: 50vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid var(--BGlight);
+  border-radius: 10px;
+  gap: 50px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+button {
+  height: 50px;
+  width: 100px;
+  background-color: var(--BGlight);
+  color: var(--Textlight);
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/*-----------
+    SELECTORS
+-------------*/
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buttons {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/*---------------
+    MEDIA QUERIES
+-----------------*/
+
+@media only screen and (max-width: 1000px) {
+  .buttons {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    border: none;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  main {
+    height: 80vh;
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  main {
+    gap: 10px;
+  }
+}

@@ -40,6 +40,7 @@ nav {
   align-items: center;
   background-color: rgba(31, 31, 31, 0.199);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   z-index: 1000;
 }
 
@@ -330,7 +331,7 @@ footer {
 
 /* FOOTER */
 
-#email {
+footer > a {
   height: 60%;
   width: 200px;
   display: flex;
@@ -339,14 +340,14 @@ footer {
   background-color: var(--BGprimaryDark);
   color: var(--Textdark);
   border-radius: 10px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 200;
   text-decoration: none;
   box-shadow: var(--Boxshadow);
 }
 
-#email > li > i {
-  margin-left: 20px;
+footer > a > li > i {
+  margin-left: 10px;
 }
 
 /*---------------
@@ -417,6 +418,16 @@ footer {
 
   nav > h1 {
     display: none;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer > a {
+    height: 40%;
+    width: 70%;
+    font-size: 16px;
   }
 
   footer > ul {
