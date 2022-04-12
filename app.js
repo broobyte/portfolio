@@ -9,6 +9,7 @@ const projectsItem = document.querySelectorAll("#projectsItem");
 const projectsItemText = document.querySelectorAll("#projectsItemText");
 const projectsAsideText = document.getElementById("projectsAsideText");
 const email = document.getElementById("email");
+const CV = document.getElementById("CV");
 
 /*---------
     GLOBALS
@@ -50,7 +51,6 @@ function theme(val) {
 
     document.body.style.backgroundColor = "var(--BGprimaryLight)";
     document.body.style.color = "var(--Textlight)";
-    nav.style.backgroundColor = "rgba(241, 243, 245, 0.199)";
     for (let i = 0; i < projectsItem.length; i++) {
       projectsItem[i].addEventListener("click", () => {
         projectsAsideText.innerHTML = projectText[i];
@@ -61,6 +61,8 @@ function theme(val) {
     }
     email.style.backgroundColor = "var(--BGprimaryLight)";
     email.style.color = "var(--Textlight)";
+    CV.style.backgroundColor = "var(--BGprimaryLight)";
+    CV.style.color = "var(--Textlight)";
   } else if (val === "dark") {
     localStorage.setItem("theme", "dark");
 
@@ -69,7 +71,6 @@ function theme(val) {
 
     document.body.style.backgroundColor = "var(--BGprimaryDark)";
     document.body.style.color = "var(--Textdark)";
-    nav.style.backgroundColor = "rgba(31, 31, 31, 0.199)";
     for (let i = 0; i < projectsItem.length; i++) {
       projectsItem[i].addEventListener("click", () => {
         projectsAsideText.innerHTML = projectText[i];
@@ -80,6 +81,8 @@ function theme(val) {
     }
     email.style.backgroundColor = "var(--BGprimaryDark)";
     email.style.color = "var(--Textdark)";
+    CV.style.backgroundColor = "var(--BGprimaryDark)";
+    CV.style.color = "var(--Textdark)";
   }
 }
 
