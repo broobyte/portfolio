@@ -12,4 +12,5 @@ Used to demonstrate what projects I am currently working on and want to display.
 
 ## Changelog 📊
 
+- [13/04/2022] **NEW: About section**
 - [12/04/2022] **FIX: On-load theme inconsistency**
